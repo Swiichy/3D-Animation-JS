@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
   }
   
   body {
@@ -13,6 +15,7 @@
     perspective: 1000px;
   }
   .container {
+    transform-style: preserve-3d;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -28,15 +31,19 @@
   }
   
   .sneaker {
+    transform-style: preserve-3d;
     min-height: 35vh;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .sneaker img {
     width: 20rem;
     z-index: 2;
     transition: all 0.75s ease-out;
+    -moz-transition: all 0.75s ease-out;
+    -webkit-transition: all 0.75s ease-out;
   }
   .circle {
     width: 15rem;
@@ -50,22 +57,34 @@
     border-radius: 50%;
     z-index: 1;
   }
-  
+
+  .info {
+    transform-style: preserve-3d;
+  }
+
   .info h1 {
+    transform-style: preserve-3d;
     font-size: 3rem;
     transition: all 0.75s ease-out;
+    -moz-transition: all 0.75s ease-out;
+    -webkit-transition: all 0.75s ease-out;
   }
   .info h3 {
+    transform-style: preserve-3d;
     font-size: 1.3rem;
     padding: 2rem 0rem;
     color: #585858;
     font-weight: lighter;
     transition: all 0.75s ease-out;
+    -moz-transition: all 0.75s ease-out;
+    -webkit-transition: all 0.75s ease-out;
   }
   .sizes {
     display: flex;
     justify-content: space-between;
     transition: all 0.75s ease-out;
+    -moz-transition: all 0.75s ease-out;
+    -webkit-transition: all 0.75s ease-out;
   }
   .sizes button {
     padding: 0.5rem 2rem;
@@ -84,6 +103,8 @@
   .purchase {
     margin-top: 5rem;
     transition: all 0.75s ease-out;
+    -moz-transition: all 0.75s ease-out;
+    -webkit-transition: all 0.75s ease-out;
   }
   .purchase button {
     width: 100%;

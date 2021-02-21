@@ -1,3 +1,7 @@
+//Probleme de compatibilité sur firefox erreur a trouver
+
+
+
 //Movement Animation to happen
 const card = document.querySelector(".card");
 const container = document.querySelector(".container");
